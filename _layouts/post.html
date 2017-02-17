@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+
+<div class="post-title">
+    {% if page.icon %}
+    <div class="logo">
+        
+            <i class="fa fa-{{page.icon}}"></i>
+        
+    </div>
+    {% endif %}
+    <div class="title">
+        <h2>{{page.title}}</h2>
+        
+        <span>
+            <time datetime="">
+                   {{ page.date | date: '%B %d, %Y' }}
+            </time>
+        </span>
+        
+    </div>
+</div>
+
+
+{{content}}

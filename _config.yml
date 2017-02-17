@@ -1,0 +1,16 @@
+### your site title here
+
+title: Krishna
+
+baseurl: /krishna
+sass: 
+    style: compressed
+
+
+
+
+exclude:
+- README.md
+
+include: 
+- _pages
