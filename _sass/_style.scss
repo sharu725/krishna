@@ -1,0 +1,321 @@
+/* http://codepen.io/Rabrennie/pen/WogNvV */
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+ figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    color: $text-color;
+    line-height: $base-line-height;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $head-font-family;
+}
+
+a {
+    text-decoration: none;
+    color: $brand-color;
+    &:hover {
+        color: $text-color;
+    }
+}
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+
+    color: $grey-color;
+    border-left: 4px solid $brand-color;
+    padding-left: $spacing-unit / 2;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+/**
+ * Code formatting
+ */
+
+.highlighter-rouge {
+    font-family: inherit;
+}
+
+pre,
+code {
+    border-radius: 3px;
+    border: 1px solid $brand-color;
+}
+
+code {
+    padding: 1px 5px;
+    font-size: 0.8em;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+.menu-container {
+    position: fixed;
+	width:5rem;
+	height: 5rem;
+	overflow: hidden;
+	left:0;
+	top: 0;
+	transition-delay: .3s;
+}
+
+.menu {
+	position: relative;
+	width: 10rem;
+	height: 10rem;
+	background-color: $brand-color;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	transition: all .3s;
+}
+
+#hamburger {
+	display: none;
+}
+
+#label-ham {
+    position: fixed;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	cursor: pointer;
+	tap-highlight-color:transparent;
+	
+	&:before {
+  content: "";
+  position: absolute;
+  top: 65%;
+  left: 65%;
+  width: 1em;
+  height: 0.15em;
+  background: white;
+  box-shadow: 
+    0 0.25em 0 0 white,
+    0 0.5em 0 0 white;
+		transform: scale(2);
+}
+}
+
+#hamburger:checked ~ .menu-container {
+    width: 250px;
+	height: 100%;
+	transition-delay: 0s;
+        @include media-query($on-palm) {
+            width: 250px;
+    }
+}
+
+#hamburger:checked ~ .menu-container .menu {
+	width: 250vh;
+	height: 250vh;
+	transition: all .3s;
+}
+
+.menu-container .links {
+	position: absolute;
+    left: 143px;
+    width: 100%;
+    top: 359px;
+	z-index: 3;
+	transform: translate(-50%, -50%);
+	text-align: left;
+    @include media-query($on-palm) {
+        left: 165px;
+    }
+	a {
+		display: block;
+		color: white;
+        font-size: 26px;
+		text-decoration: none;
+        margin: 2rem 0rem;
+        @include media-query($on-palm) {
+            font-size: 18px;
+            margin: 3rem 0rem;
+        }
+        &:hover {
+            color: #eee;
+        }
+	}
+}
+
+.content {
+	max-width: 650px;
+	transition: all .2s;
+	transition-delay: .1s;
+    margin: 0 auto;
+    @include media-query($on-palm) {
+        padding: 1rem 1rem;
+        font-size: 1em;
+    }
+		
+	
+	p {
+		margin-bottom: 1em;
+
+	}
+}
+
+#hamburger:checked ~ .content {
+	padding-left: 300px;
+	transition: all .2s;
+	transition-delay: 0s;
+}
+
+/* Site CSS */
+ h1.site-title {
+    font-size: 70px;
+    display: inline-block;
+    margin: 2em 0 1em 0;
+    text-transform: uppercase;
+    background: transparent;
+     color: $text-color;
+     @include media-query($on-palm) {
+         font-size: 60px;
+         margin: 1em 0 0.5em 0;
+     }
+}
+
+header {
+    text-align: center;
+}
+
+.post-index {
+    display: table;
+    margin: 1rem 0rem;
+    .post-content p {
+        line-height: 1.5em;
+        margin-bottom: 0.1em;
+    }
+    
+    .post-image {
+        padding-right: 1.4em;
+        padding-top: 1em;
+        i {
+            font-size: 3em;
+        }
+    }
+    .post-detail {
+        color: lighten($grey-color, 10%);
+        font-size: 0.8em;
+        font-style: italic;
+    }
+    
+    a {
+        &:hover {
+            color: $brand-color;
+        }
+    }
+}
+
+
+.post-index .post-image, .post-index .post-content {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.list {
+    border-bottom: 1px solid #ddd;
+}
+
+.post-index-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.post-title {
+    display: table;
+}
+
+.logo, .title {
+        display: table-cell;
+        vertical-align: middle;
+        color: $brand-color;
+    h2 {
+        font-size: 1.8em;
+        margin-bottom: 0;
+        font-family: $base-font-family;
+        @include media-query($on-palm) {
+            font-size: 1.5em;
+        }
+    }
+    time {
+        font-style: italic;
+        font-size: 0.8em;
+        color: $grey-color;
+    }
+}
+.logo {
+    font-size: 400%;
+    padding-right: 0.5em;
+    @include media-query($on-palm) {
+             font-size: 200%;
+        }
+
+}
+
+
+
+.video {
+    width: 100%;
+    height: 360px;
+    @include media-query($on-palm) {
+        height: 160px;
+    }
+}
+footer {
+    text-align: center;
+    padding: 2em 0;
+}
