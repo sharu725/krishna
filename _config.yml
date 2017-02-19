@@ -7,6 +7,8 @@ sass:
     style: compressed
 
 
+# Tracker
+analytics: UA-83979019-1
 
 
 exclude:
