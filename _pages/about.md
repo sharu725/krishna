@@ -12,7 +12,7 @@ Ankur Gupta for his Trio theme: [https://github.com/ankur-gupta/trio](https://gi
 
 Rab Rennie for his CSS only Expanding Menu: [http://codepen.io/Rabrennie/pen/WogNvV](http://codepen.io/Rabrennie/pen/WogNvV)
 
-For more themes visit - [**Webjeda Jekyll Themes**](https://blog.webjeda.com/jekyll-themes/){: target="_blank"}
+For more themes visit - [**Jekyll Themes**](https:jekyll-themes.com){: target="_blank"}
 
 For Jekyll tutorials visit - [**Webjeda**](https://blog.webjeda.com/){: target="_blank"}
 

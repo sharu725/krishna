@@ -27,17 +27,17 @@ This process will host the theme as a **Project Page**. You can also download th
 
 The default theme will look like this
 
-![webjeda krishna jekyll theme](/images/krishna-minimal-jekyll-theme-menu-bar-1.png)
+![webjeda krishna jekyll theme](https://github.com/sharu725/krishna/raw/gh-pages/images/krishna-minimal-jekyll-theme-menu-bar-1.png)
 
 
 Expanded menu bar would look like this
 
-![webjeda krishna jekyll theme sidebar](/images/krishna-minimal-jekyll-theme-menu-bar-2.png)
+![webjeda krishna jekyll theme sidebar](https://github.com/sharu725/krishna/raw/gh-pages/images/krishna-minimal-jekyll-theme-menu-bar-2.png)
 
 
 This theme is made especially for smartphones.
 
-![webjeda krishna responsive jekyll theme](/images/krishna-minimal-jekyll-theme-menu-bar-responsive.png)
+![webjeda krishna responsive jekyll theme](https://github.com/sharu725/krishna/raw/gh-pages/images/krishna-minimal-jekyll-theme-menu-bar-responsive.png)
 
 # Development
 Make changes to the **master** branch and create a pull request. Do not use **gh-pages** branch as it is used to host the theme.
