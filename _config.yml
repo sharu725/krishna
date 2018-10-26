@@ -1,8 +1,8 @@
 ### your site title here
 
-title: BLOG
+title: aberges
 
-baseurl: /krishna
+baseurl: /blog
 sass: 
     style: compressed
 
