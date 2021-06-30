@@ -1,18 +1,42 @@
-### your site title here
+# The Site's Configuration
 
-title: Krishna
+title: Krishna # the main title
 
-baseurl: /krishna
-sass: 
-    style: compressed
+# url with protocol for the site
+# example: "https://username.github.io"
+url: "https://webjeda.com"
 
+# If you are hosting this site as a GitHub pages project site,
+# change the baseurl to '/projectname'
+baseurl: "/krishna"
 
-# Tracker
+lang: en-US # html tag language attribute > https://www.w3.org/International/questions/qa-choosing-language-tags
+
+description: >- # meta description
+  Krishna is a minimal Jekyll theme
+  suitable for code based blogs and 
+  project showcase.
+
+# Google Analytics
 analytics: UA-83979019-1
 
+#------ Recommended to not modify the following options -----
 
 exclude:
-- README.md
+  - README.md
+  - LICENSE
 
-include: 
-- _pages
+include:
+  - _pages
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
