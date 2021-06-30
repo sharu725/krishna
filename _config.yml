@@ -17,6 +17,11 @@ description: >- # meta description
   suitable for code based blogs and 
   project showcase.
 
+# Disqus Comments
+disqus:
+  comments: true # boolean - globally enable/disable comments
+  shortname: webjeda-demo # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+
 # Google Analytics
 analytics: UA-83979019-1
 

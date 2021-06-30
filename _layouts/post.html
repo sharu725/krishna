@@ -25,3 +25,7 @@ layout: default
 
 
 {{content}}
+
+{% if site.disqus.comments and page.comments %}
+    {% include disqus.html %}
+{% endif %}
