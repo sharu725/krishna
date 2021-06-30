@@ -40,3 +40,6 @@ compress_html:
   blanklines: false
   ignore:
     envs: [development]
+
+plugins:
+  - jekyll-sitemap
