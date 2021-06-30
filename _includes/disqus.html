@@ -1,0 +1,25 @@
+<!--
+  The Disqus lazy loading.
+  Powered by: <https://github.com/osvaldasvalutis/disqusLoader.js>
+-->
+
+<div id="disqus">
+    <p>
+      Comments powered by <a href="https://disqus.com/">Disqus</a>.
+    </p>
+</div>
+
+<script src="{{ '/js/disqusloader.min.js' | relative_url }}"></script>
+<script>
+    const options = {
+        scriptUrl: '//{{ site.disqus.shortname }}.disqus.com/embed.js',
+
+        disqusConfig: function() {
+          this.page.title = "{{ site.title }}";
+          this.page.url = '{{site.url}}{{site.baseurl}}';
+          this.page.identifier = '{{ post.url }}';
+        }
+    };
+
+    disqusLoader( '#disqus', options );
+</script>
