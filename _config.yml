@@ -2,7 +2,7 @@
 
 title: Krishna
 
-baseurl: /krishna
+#baseurl: /krishna
 sass: 
     style: compressed
 
